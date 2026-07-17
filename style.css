@@ -1,0 +1,63 @@
+/*Variables principales*/
+:root{
+    --color-fondo:#0f172a;
+    --color-tarjeta: #1e293b;
+    --color-texto-principal:#f8fafc;
+    --color-texto-secundario:#94a3b8;
+    --color-primario:#6366f1;
+    --color-secundario:#06b6d4;
+    --borde-redondeado:16px;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+    line-height: 1.7;
+    padding: 20px;
+}
+
+hr{
+    display: none;
+}
+
+@media (min-width:992px){
+    body{
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap:40px;
+        max-width: 1250px;
+        margin: 40px auto;
+        align-items: start;
+    }
+
+    header{
+        position: sticky;
+        top: 40px;
+    }
+}
+
+header{
+    background: linear-gradient(135deg, #1e293b,#0f172a);
+    padding: 30px;
+    border-radius:var(--borde-redondeado);
+    border: 1px solid rgba(255, 255,255, 0.05);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.03);
+}
+
+header h1{
+    font-size: 1.8rem;
+    color: var(--color-texto-principal);
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
