@@ -45,6 +45,11 @@ hr{
         position: sticky;
         top: 40px;
     }
+
+    footer{
+        grid-column: span 2;
+        margin-top: 20px;
+    }
 }
 
 header{
@@ -265,4 +270,8 @@ footer a:hover{
     color: var(--color-texto-principal);
     text-decoration:  underline;
 }
+
+
+
+
 
