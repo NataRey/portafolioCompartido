@@ -183,4 +183,86 @@ th, td{
     text-align: left;
 }
 
+th{
+    background-color: #161739;
+    color: var(--color-primario);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #242559;
+}
+td{
+    border-bottom: 1px solid #0b0b19 ;
+    color: var(--color-texto-secundario);
+}
+
+tbody tr:nth-child(even){
+    background-color: #080c13;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--color-texto-principal);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    padding: 14px 18px;
+    background-color: var(--color-fondo);
+    border-radius: 8px;
+    border: 1px solid #212f47;
+    color: var(--color-texto-principal);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.95rem;
+}
+
+button{
+    background: linear-gradient(
+        135deg, var(--color-secundario));
+    color: var(--color-texto-principal);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: translateY(-3px);
+}
+
+footer{
+    width: 100%;
+    background-color: #161739;
+    padding: 30px;
+    border: 1px solid #2b2d5a;
+    border-radius: var(--borde-redondeado);
+    text-align: center;
+    box-shadow: inset 0 2px 4px #3d3f72;
+}
+
+footer a{
+    color: var(--color-texto-secundario);
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 5px;
+
+}
+
+footer a:hover{
+    color: var(--color-texto-principal);
+    text-decoration:  underline;
+}
 
